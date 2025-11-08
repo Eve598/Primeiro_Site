@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.overlay-container {
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto 40px auto;
+}
+
+.centralizada {
+  display: block;
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.texto-topo {
+  font-size: 28px;
+  background-color: #00000000;
+  padding: 25px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto 10px auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  width: 90%;
+}
+
+.botao-entrar {
+  padding: 12px 25px;
+  font-size: 20px;
+  background-color: #ffc10780;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  position: absolute;
+  top: 200px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.botao-voltar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #13131370;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}

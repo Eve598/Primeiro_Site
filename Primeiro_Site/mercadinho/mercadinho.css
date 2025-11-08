@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+.topo header {
+  background-image: url(imagens/nhaaaa.png);
+  color: rgb(139, 139, 139);
+  padding: 15px;
+  text-align: center;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+.box-login {
+  background-color: rgba(255, 182, 182, 0.596);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 490px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.box-login input,
+.box-login button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.box-produtos {
+  background-image: url(imagens/miii.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 490px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  display: none;
+}
+
+.div-celular,
+.div-notebook,
+.div-ps5,
+.div-tablet {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #747474;
+  text-shadow: 2px 2px 0 rgba(168, 168, 168, 0.712);
+}
+
+.div-celular {
+  border: 2px solid #ff9999;
+  background-color: rgba(255, 229, 229, 0.363);
+}
+
+.div-celular button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.div-celular button:hover {
+  background-color: #cc4444;
+}
+
+.div-notebook {
+  border: 2px solid #a58bff;
+  background-color: rgba(238, 231, 255, 0.342);
+}
+
+.div-notebook button {
+  background-color: #7f5fff;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.div-notebook button:hover {
+  background-color: #5b3ec6;
+}
+
+.div-ps5 {
+  border: 2px solid #5dceff;
+  background-color: rgba(181, 237, 255, 0.308);
+}
+
+.div-ps5 button {
+  background-color: #00b0ff;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.div-ps5 button:hover {
+  background-color: #0086cc;
+}
+
+.div-tablet {
+  border: 2px solid #ffc266;
+  background-color: rgba(255, 240, 217, 0.356);
+}
+
+.div-tablet button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.div-tablet button:hover {
+  background-color: #cc7a00;
+}
+
+@media screen and (max-width: 600px) {
+  .box-login, .box-produtos {
+    width: 95%;
+  }
+}
+
+.div-celular button,
+.div-notebook button,
+.div-ps5 button,
+.div-tablet button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.div-celular button:hover,
+.div-notebook button:hover,
+.div-ps5 button:hover,
+.div-tablet button:hover {
+  background-color: #cc4444;
+}
+
+.div-celular button:last-child,
+.div-notebook button:last-child,
+.div-ps5 button:last-child,
+.div-tablet button:last-child {
+  background-color: #ff9900;
+}
+
+.div-celular button:last-child:hover,
+.div-notebook button:last-child:hover,
+.div-ps5 button:last-child:hover,
+.div-tablet button:last-child:hover {
+  background-color: #cc7a00;
+}

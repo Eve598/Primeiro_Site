@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('imagens/tinteiro.jfif');
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 0, 0);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+.centralizada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 10px;
+  color: rgb(10, 10, 10);
+  text-shadow: 2px 2px 0 rgb(134, 0, 0);
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;    
+  height: 50px;    
+  text-align: center;
+  line-height: 46px; 
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.dragao {
+  top: 140px;
+  left: 860px;
+  width: 170px;
+  height: 300px;
+}
+
+
+
+.picapau {
+  top: 50px;
+  left: 430px;
+  width: 400px;
+  height: 300px;
+}
+
+.texto {
+  position: absolute;
+  bottom: 290px;
+  left: 30px;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 3;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: rgba(255, 0, 0, 0.26);
+  border-radius: 10px;
+  display: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  color: rgb(10, 10, 10);
+  text-shadow: 2px 2px 0 rgb(255, 255, 255);
+}
+
+.tim3 {
+    position: absolute;
+  top: 530px;
+  left: 330px;
+  width: 150px;
+  height: 50px;
+  background: rgba(0, 0, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+
+.tim3:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.tim2 {
+  position: absolute;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  top: 530px;
+  left: 10px;
+  width: 150px;
+  height: 50px;
+  background: rgba(111, 0, 255, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  font-weight: bold;
+}
+
+.tim2:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.tim1 {
+  position: absolute;
+  top: 530px;
+  left: 170px;
+  width: 150px;
+  height: 50px;
+  background: rgba(0, 0, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.tim1:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.voltar {
+  display: block;
+  margin: 0 auto 0px auto;
+  padding: 8px 16px;
+  background-color: #30303071;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  border-color: white;
+  cursor: pointer;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.voltar {
+  position: absolute;
+  top: 530px;
+  left: 80%;
+}
+
+.voltar:hover {
+  background-color: #fff3f38c;
+}

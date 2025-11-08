@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("imagens/incrivel.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+button {
+  border-radius: 30px;
+  margin: 10px;
+  border: none;
+}
+
+.Steven {
+  position: fixed;
+  top: 45%;
+  left: 40px;
+  transform: translateY(-50%);
+  background-image: url(imagens/steven.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 90px;
+  text-align: left;
+  padding-left: 170px;
+  color: white;
+  font-size: 17px;
+  font-family: comic sans MS, cursive;
+}
+
+.harry {
+  position: fixed;
+  top: 65%;
+  left: 40px;
+  transform: translateY(-50%);
+  background-image: url(imagens/fundo1.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 300px;
+  height: 90px;
+  color: #ffd700;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.cuphead {
+  background-image: url(imagens/talvez.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 90px;
+  font-family: 'Dancing Script', cursive;
+  position: fixed;
+  top: 66%;
+  left: 910px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 90px;
+  padding-left: 170px;
+}
+
+.toh {
+  position: fixed;
+  top: 45%;
+  left: 910px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 90px;
+  padding-left: 170px;
+  font-size: 17px;
+  font-family: comic sans MS, cursive;
+  width: 300px;
+  height: 90px;
+  color: white;
+  text-align: left;
+  padding-left: 43px;
+  background-color: blueviolet;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 30px;
+  
+}
+
+@keyframes brilhoMisterioso {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+}
+
+@keyframes brilhoColorido {
+  0%   { color: #ff4ecb; text-shadow: 0 0 5px #ff4ecb; }
+  25%  { color: #4efffc; text-shadow: 0 0 5px #4efffc; }
+  50%  { color: #a5ff4e; text-shadow: 0 0 5px #a5ff4e; }
+  75%  { color: #ffe84e; text-shadow: 0 0 5px #ffe84e; }
+  100% { color: #ff4ecb; text-shadow: 0 0 5px #ff4ecb; }
+}
+
+.toh:hover {
+  animation: brilhoMisterioso 1.8s ease-in-out infinite;
+  animation: brilhoColorido 2s infinite alternate;
+  cursor: pointer;
+}
+
+
+
+
+
+.sorry {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #513bf5;
+  border: none;
+}
+
+
+button.Steven {
+  transition: transform 0.3s ease;
+}
+button.Steven:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+button.harry {
+  color: gold;
+  transition: color 0.8s ease, text-shadow 0.8s ease;
+  text-shadow: 0 0 10px gold;
+}
+
+button.harry:hover {
+  color: transparent;
+  text-shadow: 0 0 30px gold;
+  transition: color 1s ease, text-shadow 1s ease;
+}
+
+button.cuphead {
+  transition: box-shadow 0.3s ease, filter 0.3s ease;
+}
+button.cuphead:hover {
+  box-shadow: 0 0 15px 5px #ffe600;
+  filter: brightness(1.2);
+}

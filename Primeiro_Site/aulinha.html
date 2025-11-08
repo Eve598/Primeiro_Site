@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explicações de HTML e CSS</title>
+  <link rel="stylesheet" href="aulinha.css" />
+  <script src="aulinha.js"></script>
+  <style>
+    .texto {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #f9f9f98e;
+      display: none;
+    }
+    button {
+      margin: 4px 0;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #eee;
+    }
+    button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+ <button class="btn-voltar" onclick="window.location.href='index.html'">voltar para o menu inicial</button>
+
+
+  <h1>Explicações sobre HTML e CSS</h1>
+
+  <table class="tabela-categorias" border="1">
+    <tr>
+      <th>HTML</th>
+      <th>CSS</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="botãoHTML">
+          <button data-texto="html1">Titulo</button><br>
+          <button data-texto="html2">Paragrafo</button><br>
+          <button data-texto="html3">imagem</button><br>
+          <button data-texto="html4">letra</button><br>
+          <button data-texto="html5">Quebrar linha</button><br>
+          <button data-texto="html6">Botão</button><br>
+          <button data-texto="html7">Texto escondido</button><br>
+          <button data-texto="html8">Levar para outro site</button><br>
+          <button data-texto="html9">Tabela</button><br>
+          <button data-texto="html10">Lista</button><br>
+          <button data-texto="html11">Detalhes que abrem e fecham</button><br>
+          <button data-texto="html12">cor</button><br>
+          <button data-texto="html13">ligar com js</button><br>
+          <button data-texto="html14">ligar com css</button><br>
+          <button data-texto="html15">Ajudinha</button><br><br>
+
+          
+        </div>
+      </td>
+
+      <td>
+        <div class="botãoCSS">
+          <button data-texto="css1">cor do fundo</button><br>
+          <button data-texto="css2">cor do texto</button><br>
+          <button data-texto="css3">Tamanho da letra</button><br>
+          <button data-texto="css4">Centralizar</button><br>
+          <button data-texto="css5">Fonte da letra</button><br>
+          <button data-texto="css6">borda do botão</button><br>
+          <button data-texto="css7">Imagem de fundo</button><br>
+          <button data-texto="css8">imagem altura</button><br>
+          <button data-texto="css9">imagem largura</button><br>
+          <button data-texto="css10">itens altura</button><br>
+          <button data-texto="css11">Itens largura</button><br>
+          <button data-texto="css12">Comprimento</button><br>
+          <button data-texto="css13">Largura</button><br>
+          <button data-texto="css14">Cor do botão</button><br>
+          <button data-texto="css15">Imagem do botão</button><br>
+          <button data-texto="css16">Borda do botão</button><br>
+          <button data-texto="css17">Arredondar as bordas do botão</button><br>
+          <button data-texto="css18">ponteiro do mouse</button><br>
+          <button data-texto="css19">botão muda de cor</button><br>
+          
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="textoHTML">
+    <div id="html1" class="texto">
+      Para criar um titulo usamos o h1, h2, h3, h4, h5 e o h6
+      <p>os H1 ate o H6 são titulos sendo o </p>
+      <h1>h1 o maior</h1><br>
+      <h2>h2 menor que o h1</h2><br>
+      <h3>h3 menor que o h2</h3><br>
+      <h4>h4 menor que o h3</h4><br>
+      <h5>h5 menor que o h4</h5><br>
+      <h6>h6 o menor de todos</h6>
+    </div>
+
+    <div id="html2" class="texto">
+      Para criar um paragrafo usamos isso: p texto /p <br>
+      < p>o P cria um paragrafo< p/>
+    </div>
+
+    <div id="html3" class="texto">
+      Para colocar uma imagem de fundo usamos:<br>
+      body style="background-image: url('nome-da-imagem.jpg');"<br>
+      Isso coloca a imagem como fundo do site.
+    </div>
+
+    <div id="html4" class="texto">
+      Para deixar a letra maior:<br>
+      p style="font-size: 24px;" <p style="font-size: 24px;">texto maior</p> /p<br>
+      Para mudar a cor da letra:<br>
+      p style="color: blue;" texto azul /p
+    </div>
+
+    <div id="html5" class="texto">
+      Para quebrar linha no texto usamos a tag br<br>
+      Exemplo:<br>
+      texto 1 br texto 2<br>
+      Isso pula para a linha de baixo sem começar um parágrafo novo.
+    </div>
+
+    <div id="html6" class="texto">
+      Para criar um botão usamos a tag button<br>
+      Exemplo:<br>
+      button <button>Clique aqui</button> /button<br>
+      Botões podem ser clicados para fazer ações com JavaScript.
+    </div>
+
+    <div id="html7" class="texto">
+      Para esconder texto que aparece só ao clicar usamos as tags details e summary<br>
+      Exemplo:<br>
+      details<br>
+      summary <details> <summary>Clique para abrir</summary> <p>nhaaaaa</p></details> /summary<br>
+      Texto escondido<br>
+      /details
+    </div>
+
+    <div id="html8" class="texto">
+      Para criar um link para outro site usamos a tag a com href<br>
+      Exemplo:<br>
+      a onclick="window.location.href='https://www.google.com';  /a<br>
+      Clicando vai para o site indicado.
+      <button onclick="window.location.href='https://www.google.com';">Ir para o Google</button>
+
+    </div>
+
+    <div id="html9" class="texto">
+      Para criar uma tabela usamos table, tr e td<br>
+      Exemplo:<br>
+      table border="1"<br>
+      tr<br>
+      td célula 1 /td<br>
+      td célula 2 /td<br>
+      /tr<br>
+      /table
+
+      <table border="1">
+  <tr>
+    <td>célula 1</td>
+    <td>célula 2</td>
+  </tr>
+</table>
+    </div>
+
+    <div id="html10" class="texto">
+      Para listas usamos ul para marcadores e ol para números<br>
+      Exemplo ul:<br>
+      ul<br>
+      li item 1 /li<br>
+      li item 2 /li<br>
+      /ul<br>
+      Exemplo ol:<br>
+      ol<br>
+      li primeiro /li<br>
+      li segundo /li<br>
+      /ol
+    </div>
+
+    <div id="html11" class="texto">
+      Para detalhes que abrem e fecham usamos details e summary<br>
+      Exemplo:<br>
+      details<br>
+      summary Clique aqui /summary<br>
+      Texto que aparece ao abrir<br>
+      /details
+    </div>
+
+    <div id="html12" class="texto">
+      Para mudar a cor do texto ou do fundo usamos style com color ou background-color<br>
+      Exemplo:<br>
+      p style="color: red;" texto vermelho /p<br>
+      p style="background-color: blue;" fundo azul /p
+    </div>
+
+    <div id="html13" class="texto">
+      <p>antes do head e depois do title vc adiciona <br>
+  <strong> script src="nome-do-arquivo-javascript.js"> script </strong><br>
+  assim o seu arquivo html vai estar ligado com o seu arquivo css</p>
+
+    </div>
+
+    <div id="html14" class="texto">
+      <p>antes do head e depois do title vc adiciona <br>
+  <strong> link rel="stylesheet" href="nome-do-arquivo-css.css" </strong><br>
+  assim o seu arquivo html vai estar ligado com o seu arquivo css</p>
+    </div>
+
+   <div id="html15" class="texto">
+  <p><strong>Div:</strong> é uma caixa que serve para agrupar várias coisas do site, como textos e imagens. Usando uma div, você pode editar tudo que está dentro dela no CSS de uma vez só.</p>
+  <p><strong>Class:</strong> é um nome que você dá para uma ou mais divs para aplicar o mesmo estilo nelas com CSS, facilitando deixar várias partes iguais.</p>
+  <p><strong>Id:</strong> é um nome único que identifica uma div específica, para você poder dar um estilo ou função exclusiva só para ela.</p>
+</div>
+
+
+
+  <div class="textoCSS">
+    <div id="css1" class="texto">
+      Para mudar a cor do fundo da página usamos:<br>
+      body {<br>
+        background-color: a cor q vc quer;<br>
+      }<br>
+      Isso deixa o fundo com a cor q vc quer.
+    </div>
+
+    <div id="css2" class="texto">
+      Para mudar a cor do texto usamos:<br>
+      aonde o texto está {<br>
+        color: red;<br>
+      }<br>
+      Isso deixa o texto vermelho.
+    </div>
+
+    <div id="css3" class="texto">
+      Para mudar o tamanho da letra usamos:<br>
+      aonde o texto está {<br>
+        font-size: 20px;<br>
+      }<br>
+      Isso deixa a letra com 20 pixels.
+    </div>
+
+    <div id="css4" class="texto">
+      Para centralizar o texto usamos:<br>
+      aonde o texto está {<br>
+        text-align: center;<br>
+      }<br>
+      Isso centraliza o texto na linha.
+    </div>
+
+    <div id="css5" class="texto">
+      Para mudar a fonte da letra usamos:<br>
+      p {<br>
+        font-family: escolha o tema que quiser;<br>
+      }<br>
+      Isso muda a fonte a q vc quiser.
+    </div>
+
+    <div id="css6" class="texto">
+      Para colocar borda no botão:<br>
+      button {<br>
+        border: 2px solid black;<br>
+      }<br>
+      Isso cria uma borda preta de 2 pixels.
+    </div>
+
+    <div id="css7" class="texto">
+      Para colocar imagem de fundo no site:<br>
+      body {<br>
+        background-image: url('nome da pasta aonde esta a imagem/nome da imagem');<br>
+      }<br>
+      Isso coloca a imagem como fundo.
+    </div>
+
+    <div id="css8" class="texto">
+      Para mudar a altura da imagem:<br>
+      img {<br>
+        height: 200px;<br>
+      }<br>
+      Isso deixa a imagem com 200 pixels de altura.
+    </div>
+
+    <div id="css9" class="texto">
+      Para mudar a largura da imagem:<br>
+      img {<br>
+        width: 300px;<br>
+      }<br>
+      Isso deixa a imagem com 300 pixels de largura.
+    </div>
+
+    <div id="css10" class="texto">
+      Para mudar a altura de um item:<br>
+      div {<br>
+        height: 150px;<br>
+      }<br>
+      Isso deixa o div com 150 pixels de altura.
+    </div>
+
+    <div id="css11" class="texto">
+      Para mudar a largura de um item:<br>
+      div {<br>
+        width: 400px;<br>
+      }<br>
+      Isso deixa o div com 400 pixels de largura.
+    </div>
+
+    <div id="css12" class="texto">
+      Para definir Comprimento usamos: <br>
+      item { <br>
+  position: absolute; <br>
+  top: 250px; <br>
+  
+} <br>
+      isso deixa o item q vc quer 250 pixels mais alto.
+    </div>
+
+    <div id="css13" class="texto">
+      Para definir largura usamos:<br>
+      item { <br>
+  position: absolute; <br>
+  left: 170px; <br>
+    </div>
+
+    <div id="css14" class="texto">
+      Para mudar a cor do botão:<br>
+      button {<br>
+        background-color: green;<br>
+      }<br>
+      Isso deixa o fundo do botão verde.
+    </div>
+
+    <div id="css15" class="texto">
+      Para colocar uma imagem no botão:<br>
+      button {<br>
+        background-image: url('nome da pasta aonde esta a imagem/nome da imagem');<br>
+      }<br>
+      Isso coloca a imagem no fundo do botão.
+    </div>
+
+    <div id="css16" class="texto">
+      Para borda do botão:<br>
+      button {<br>
+        border: 1px solid black;<br>
+      }<br>
+      Isso coloca uma borda preta fina.
+    </div>
+
+    <div id="css17" class="texto">
+      Para arredondar as bordas do botão:<br>
+      button {<br>
+        border-radius: 10px;<br>
+      }<br>
+      Isso deixa as bordas arredondadas.
+    </div>
+
+    <div id="css18" class="texto">
+      Para mudar o ponteiro do mouse ao passar no botão:<br>
+      button {<br>
+        cursor: pointer;<br>
+      }<br>
+      Isso mostra a mãozinha indicando que dá pra clicar.
+    </div>
+
+    <div id="css19" class="texto">
+      Para mudar a cor do botão ao passar o mouse:<br>
+      button:hover {<br>
+        button:hover {
+  background-color: ;
+}
+      }<br>
+      Isso deixa o botão da cor q vc quiser ao passar o mouse, com transição suave.
+    </div>
+
+  
+  </div>
+
+</body>
+</html>

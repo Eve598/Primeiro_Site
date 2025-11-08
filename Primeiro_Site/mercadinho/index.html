@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercadinho</title>
+  <link rel="stylesheet" href="mercadinho.css"/>
+  <script defer src="mercadinho.js"></script>
+</head>
+<body>
+
+  <div class="topo">
+    <header>
+      <h1>Comprinhaaa</h1>
+      <p>Compre e venda produtos <br> nha nha nha nha</p>
+    </header>
+  </div>
+
+  <div class="conteudo">
+
+    <div class="box-login">
+      <h2>Login</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email">
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite sua senha">
+
+      <button onclick="fazerLogin()">Entrar</button>
+      <p id="mensagemLogin"></p>
+    </div>
+
+    <div class="box-produtos" id="telaProdutos">
+      <h2>Produtos disponíveis</h2>
+
+      <div class="div-celular">
+        <h3>Celular</h3>
+        <p>Preço: R$ 1500</p>
+        <button onclick="comprar('Celular')">Comprar</button>
+        <button onclick="comprar('Celular', 1500)">Comprar com 10% de desconto</button>
+      </div>
+
+      <div class="div-notebook">
+        <h3>Notebook</h3>
+        <p>Preço: R$ 3000</p>
+        <button onclick="comprar('Notebook')">Comprar</button>
+        <button onclick="comprar('Notebook', 3000)">Comprar com 10% de desconto</button>
+      </div>
+
+      <div class="div-ps5">
+        <h3>PS5</h3>
+        <p>Preço: R$ 3600</p>
+        <button onclick="comprar('PlayStation 5')">Comprar</button>
+        <button onclick="comprar('PlayStation 5', 3600)">Comprar com 10% de desconto</button>
+      </div>
+
+      <div class="div-tablet">
+        <h3>Tablet</h3>
+        <p>Preço: R$ 1700</p>
+        <button onclick="comprar('Tablet')">Comprar</button>
+        <button onclick="comprar('Tablet', 1700)">Comprar com 10% de desconto</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

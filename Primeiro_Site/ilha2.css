@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('imagens/ilha2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: rgba(255, 255, 255, 0);
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+.centralizada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;    
+  height: 50px;    
+  text-align: center;
+  line-height: 46px; 
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.dragao {
+  top: 0px;
+  left: 1030px;
+  width: 70px;
+  height: 120px;
+}
+
+.bolo {
+  top: 325px;
+  left: 60px;
+  width: 150px;
+  height: 100px;
+}
+
+.genio {
+  top: 330px;
+  left: 460px;
+  width: 150px;
+  height: 100px;
+}
+
+.palhaco {
+  top: 559px;
+  left: 790px;
+  width: 95px;
+  height: 50px;
+}
+
+.picapau {
+  top: 40px;
+  left: 40px;
+  width: 70px;
+  height: 85px;
+}
+
+.texto {
+  position: absolute;
+  bottom: 290px;
+  left: 500px;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 3;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: rgba(255, 251, 0, 0.26);
+  border-radius: 10px;
+  display: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  color: rgb(31, 31, 31);
+  text-shadow: 2px 2px 0 rgb(131, 195, 255);
+}
+
+.tim2 {
+  position: relative;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0);
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 0, 0, 0);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  top: 200px;
+  left: 1170px;
+  width: 100px;
+  height: 60px;
+}
+
+.tim2:hover {
+  background: rgba(255, 0, 0, 0);
+  color: rgba(255, 208, 0, 0);
+  border-color: rgba(255, 0, 0, 0);
+}
+
+.tim2 {
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0);
+  top: 310px;
+  left: 1200px;
+  width: 100px;
+  height: 70px;
+  background: rgba(111, 0, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  font-weight: bold;
+}
+
+.tim1:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.tim3 {
+  position: absolute;
+  top: 530px;
+  left: 10px;
+  width: 150px;
+  height: 50px;
+  background: rgba(0, 0, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.tim3:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.tim1 {
+  position: absolute;
+  top: 530px;
+  left: 170px;
+  width: 150px;
+  height: 50px;
+  background: rgba(0, 0, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.tim {
+  position: absolute;
+  top: 530px;
+  left: 330px;
+  width: 150px;
+  height: 50px;
+  background: rgba(0, 0, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.tim:hover {
+  background: rgba(173, 216, 230, 0.74);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+
+.voltar {
+  display: block;
+  margin: 0 auto 0px auto;
+  padding: 8px 16px;
+  background-color: #30303071;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.voltar {
+  position: absolute;
+  top: 250px;
+  left: 1%;
+}
+
+.voltar:hover {
+  background-color: #fff3f38c;
+}
+
+

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-image: url("imagens/stevenn.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+  color: #3a3a3a;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+h1.titulo {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p.subtitulo {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.btn-voltar {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 8px 16px;
+  background-color: #7932a856;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #36249e73;
+}
+
+.tabela-categorias {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabela-categorias th {
+  background-color: #3c06ff75;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  font-size: 1.1em;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+}
+
+.tabela-categorias td {
+  border: 0.9px solid #813dff75;
+  padding: 12px 6px;
+  vertical-align: top;
+}
+
+.tabela-categorias button {
+  margin: 6px 0;
+  width: 100%;
+  padding: 8px 5px;
+  background-color: #ff48ac65;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.tabela-categorias button:hover {
+  background-color: #ffffff7c;
+}
+
+.texto {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: #8c00ff44;
+  border-radius: 8px;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #ffffff;
+  box-shadow: 0 0 50px #ffffff;
+  font-family: 'Poppins', cursive, sans-serif;
+  font-style: italic;
+}
